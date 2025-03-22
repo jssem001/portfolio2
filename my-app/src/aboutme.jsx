@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 
-const Portfolio = () => {
-  const [repos, setRepos] = useState([]);
+const About = () => {
+//   const [repos, setRepos] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
 
-  useEffect(() => {
-    fetch("https://api.github.com/users/jssem001/repos")
-      .then((response) => response.json())
-      .then((data) => setRepos(data))
-      .catch((error) => console.error("Error fetching repos:", error));
-  }, []);
+//   useEffect(() => {
+//     fetch("https://api.github.com/users/jssem001/repos")
+//       .then((response) => response.json())
+//       .then((data) => setRepos(data))
+//       .catch((error) => console.error("Error fetching repos:", error));
+//   }, []);
 
   return (
     <div className={`min-h-screen ${darkMode ? "bg-black text-white" : "bg-[#F5F5F5] text-black"} p-8`}> 
@@ -21,7 +21,7 @@ const Portfolio = () => {
         <h1 className="text-3xl font-bold">My Portfolio</h1>
         <nav className="flex items-center gap-4">
           <ul className="flex gap-6">
-            <Link to="/aboutme"><li className="hover:underline cursor-pointer">About</li></Link>
+            <Link to="/"><li className="hover:underline cursor-pointer">Home</li></Link>
             <li className="hover:underline cursor-pointer">Projects</li>
             <li className="hover:underline cursor-pointer">Contact</li>
           </ul>
@@ -31,7 +31,7 @@ const Portfolio = () => {
         </nav>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section
       <section className="mt-16 flex flex-col items-center text-center">
         <motion.h2
           className="text-5xl font-bold"
@@ -48,10 +48,10 @@ const Portfolio = () => {
         >
           View My Work
         </motion.button>
-      </section>
+      </section> */}
 
       {/* About Section */}
-      {/* <section className={`mt-16 p-6 border-4 border-black shadow-lg ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
+      <section className={`mt-16 p-6 border-4 border-black shadow-lg ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
         <h2 className="text-4xl font-bold border-b-4 border-black inline-block">About Me</h2>
         <div className="mt-6 text-lg">
           <h3 className="text-2xl font-bold">Where Have I Been?</h3>
@@ -73,9 +73,9 @@ const Portfolio = () => {
             <li>Currently developing an app for African athletes and sports fans.</li>
           </ul>
         </div>
-      </section> */}
+      </section>
 
-      {/* Projects Section */}
+      {/* Projects Section
       <section className="mt-16">
         <h2 className="text-4xl font-bold border-b-4 border-black inline-block">My GitHub Projects</h2>
         <motion.div 
@@ -104,7 +104,7 @@ const Portfolio = () => {
             </motion.div>
           ))}
         </motion.div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="mt-16 py-4 border-t-4 border-black text-center">
@@ -114,4 +114,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default About;
