@@ -22,8 +22,8 @@ const About = () => {
         <nav className="flex items-center gap-4">
           <ul className="flex gap-6">
             <Link to="/"><li className="hover:underline cursor-pointer">Home</li></Link>
-            <li className="hover:underline cursor-pointer">Projects</li>
-            <li className="hover:underline cursor-pointer">Contact</li>
+            <a href="https://drive.google.com/file/d/1vT4DZjWVj-AT1omgoEqJ-tQE9G1cZhMq/view?usp=sharing" target="_blank"><li className="hover:underline cursor-pointer">Resume</li></a>
+            <a href="https://www.linkedin.com/in/joshua-ssemwanga2001/" target="_blank"><li className="hover:underline cursor-pointer">LinkedIn</li></a>
           </ul>
           <button onClick={() => setDarkMode(!darkMode)} className="p-2 border-2 border-black rounded-full">
             {darkMode ? <Sun size={24} className="text-yellow-400" /> : <Moon size={24} className="text-black" />}
@@ -108,7 +108,7 @@ const About = () => {
 
       {/* Footer */}
       <footer className="mt-16 py-4 border-t-4 border-black text-center">
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Joshua. All rights reserved.</p>
       </footer>
     </div>
   );
