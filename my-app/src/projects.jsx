@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 
-const Portfolio = () => {
+const Projects = () => {
   const [repos, setRepos] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -15,13 +15,13 @@ const Portfolio = () => {
   }, []);
 
   return (
-    // <div className={`min-h-screen ${darkMode ? "bg-black text-white" : "bg-[#F5F5F5] text-black"} p-8`}>
-    <div className={`h-screen flex flex-col justify-between ${darkMode ? "bg-black text-white" : "bg-[#F5F5F5] text-black"} p-8`}>
+    <div className={`min-h-screen ${darkMode ? "bg-black text-white" : "bg-[#F5F5F5] text-black"} p-8`}> 
       {/* Header Section */}
       <header className={`flex justify-between items-center py-4 border-b-4 ${darkMode ? "border-red-500" : "border-black"}`}>
         <h1 className="text-3xl font-bold">My Portfolio</h1>
         <nav className="flex items-center gap-4">
           <ul className="flex gap-6">
+            <Link to="/"><li className="hover:underline cursor-pointer">Home</li></Link>
             <Link to="/aboutme"><li className="hover:underline cursor-pointer">About Me</li></Link>
             <a href="https://github.com/jssem001" target="_blank"><li className="hover:underline cursor-pointer">Github</li></a>
           </ul>
@@ -42,19 +42,17 @@ const Portfolio = () => {
           Hello, I'm <span className="text-red-500">Josh</span>
         </motion.h2>
         <p className="mt-4 text-lg">A passionate developer bringing ideas to life.</p>
-        <Link to='/projects'>
         <motion.button
           className="mt-6 px-6 py-3 bg-black text-white border-4 border-black text-lg font-bold shadow-lg hover:bg-red-500 hover:text-black"
           whileHover={{ scale: 1.1 }}
         >
           View My Work
         </motion.button>
-        </Link>
       </section>
 
 
       {/* Projects Section */}
-      {/* <section className="mt-16">
+      <section className="mt-16">
         <h2 className="text-4xl font-bold border-b-4 border-black inline-block">My GitHub Projects</h2>
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6"
@@ -82,7 +80,7 @@ const Portfolio = () => {
             </motion.div>
           ))}
         </motion.div>
-      </section> */}
+      </section>
 
       {/* Footer */}
       <footer className="mt-16 py-4 border-t-4 border-black text-center">
@@ -92,4 +90,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;
