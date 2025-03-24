@@ -31,7 +31,7 @@ const Projects = () => {
         </nav>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section
       <section className="mt-16 flex flex-col items-center text-center">
         <motion.h2
           className="text-5xl font-bold"
@@ -48,7 +48,21 @@ const Projects = () => {
         >
           View My Work
         </motion.button>
+      </section> */}
+
+       {/* Categories Section */}
+      <section className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <motion.div className={`p-6 ${darkMode ? "bg-blue-900" : "bg-blue-500"} text-white text-center font-bold text-2xl`} whileHover={{ scale: 1.05 }}>
+          Data
+        </motion.div>
+        <motion.div className={`p-6 ${darkMode ? "bg-green-900" : "bg-green-500"} text-white text-center font-bold text-2xl`} whileHover={{ scale: 1.05 }}>
+          Applications
+        </motion.div>
+        <motion.div className={`p-6 ${darkMode ? "bg-orange-900" : "bg-orange-500"} text-white text-center font-bold text-2xl`} whileHover={{ scale: 1.05 }}>
+          Exercises
+        </motion.div>
       </section>
+
 
 
       {/* Projects Section */}
