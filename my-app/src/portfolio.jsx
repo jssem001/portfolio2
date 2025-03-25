@@ -51,7 +51,7 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer className="mt-16 py-4 border-t-4 border-black text-center">
-        <p>&copy; 2025 Joshua. All rights reserved.</p>
+        <p>&copy; 2025 Josh Ssemwanga. All rights reserved.</p>
       </footer>
     </div>
   );
