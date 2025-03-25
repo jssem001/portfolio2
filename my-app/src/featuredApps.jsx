@@ -1,42 +1,51 @@
 import React from "react";
 import { motion } from "framer-motion";
-import HotHand from "./docs/Hot_Hand_Fallacy.webp";
-import KDshot from "./docs/KD_shot.jpg";
-import IPL from "./docs/IPL.png";
-import footy from "./docs/footy.jpg";
+import MaxedOut from "./docs/logo.png";
+import School from "./docs/school.jpg";
+import OasisFM from "./docs/Oasis-fm-logo-1.png";
+import tactics from "./docs/tactics.jpg";
+import books from "./docs/books.jpg";
 
 const featuredApps = [
   {
     id: 1,
-    title: "Hot Hand Exploration",
+    title: "Maxed Out Olympics",
     description:
-      "Analyzing whether streaks in sports performance are statistically significant.",
-    image: HotHand,
-    github: "https://github.com/jssem001/Hot-hand",
+      "The app is a sports website, providing updates related to the PARIS 2024 olympics.",
+    image: MaxedOut,
+    github: "https://github.com/jssem001/olympics",
   },
   {
     id: 2,
-    title: "NBA Players Shooting Graphs",
+    title: "Moringa School Management System",
     description:
-      "Visualization of shooting statistics for select NBA players.",
-    image: KDshot,
-    github: "https://github.com/jssem001/NBA-player-shooting",
+      "This app is designed to allow administrators, students, and instructors to maximize performance in the project development process.",
+    image: School,
+    github: "https://github.com/jssem001/moringa-school-mgmt",
   },
   {
     id: 3,
-    title: "IPL Games Comparisons",
+    title: "Oasis Farmers' Market",
     description:
-      "Using IPL 2018 data to analyze scoring trends of different teams.",
-    image: IPL,
-    github: "https://github.com/jssem001/IPL-games-comparison",
+      "This app is designed to be a marketplace for Farmers to shop for and sell food and agricultral products.",
+    image: OasisFM,
+    github: "https://github.com/jssem001/oasis-food-market",
   },
   {
     id: 4,
-    title: "Football and Pythagorean Expectation",
+    title: "Football League Management System",
     description:
-      "Examining PPG and Pythagorean expectation in the English Premier League.",
-    image: footy,
-    github: "https://github.com/jssem001/Pythagorean-expectation",
+      "This project is a command-line application that allows users to access and manage information about their favorite football mini-league.",
+    image: tactics,
+    github: "https://github.com/jssem001/leagues-cli-project",
+  },
+  {
+    id: 5,
+    title: "Library Application",
+    description:
+      "A command-line application for borrowing books.",
+    image: books,
+    github: "https://github.com/jssem001/library-cli",
   },
 ];
 
