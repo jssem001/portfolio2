@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion"; // Import AnimatePresence
 import { Sun, Moon } from "lucide-react";
@@ -6,18 +6,13 @@ import HotHand from "./docs/Hot_Hand_Fallacy.webp";
 import KDshot from "./docs/KD_shot.jpg";
 import IPL from "./docs/IPL.png";
 import footy from "./docs/footy.jpg";
+import FeaturedApps from "./featuredApps";
 
 const Projects = () => {
-//   const [repos, setRepos] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
   const [showFeaturedData, setShowFeaturedData] = useState(false); // New state for toggling Featured Data section
+  const [showFeaturedApps, setShowFeaturedApps] = useState(false);
 
-//   useEffect(() => {
-//     fetch("https://api.github.com/users/jssem001/repos")
-//       .then((response) => response.json())
-//       .then((data) => setRepos(data))
-//       .catch((error) => console.error("Error fetching repos:", error));
-//   }, []);
 
   return (
     <div className={`min-h-screen ${darkMode ? "bg-black text-white" : "bg-[#F5F5F5] text-black"} p-8`}> 
@@ -45,12 +40,13 @@ const Projects = () => {
         >
           Data Stories
         </motion.div>
-        <motion.div className={`p-6 ${darkMode ? "bg-green-900" : "bg-green-500"} text-white text-center font-bold text-2xl border-black border-4 rounded-md`} whileHover={{ scale: 1.05 }}>
+        <motion.div 
+         className={`p-6 ${darkMode ? "bg-green-900" : "bg-green-500"} text-white text-center font-bold text-2xl border-black border-4 rounded-md`} 
+         whileHover={{ scale: 1.05 }}
+         onClick={() => setShowFeaturedApps(!showFeaturedApps)}
+        >
           Applications
         </motion.div>
-        {/* <motion.div className={`p-6 ${darkMode ? "bg-orange-900" : "bg-orange-500"} text-white text-center font-bold text-2xl border-black border-4 rounded-md`} whileHover={{ scale: 1.05 }}>
-          Exercises
-        </motion.div> */}
       </section>
 
       {/* Featured Data Section (Hidden by Default) */}
@@ -203,38 +199,21 @@ const Projects = () => {
           </motion.section>
         )}
       </AnimatePresence>
-      </section>  
-
-      {/* Projects Section
-      <section className="mt-16">
-        <h2 className="text-4xl font-bold border-b-4 border-black inline-block">My GitHub Projects</h2>
+      </section>
+      {/* Featured Applications Section */}
+      <AnimatePresence>
+        {showFeaturedApps && (
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+            className="mt-8"
+            initial={{ opacity: 0, y: -20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            exit={{ opacity: 0, y: -20 }} 
+            transition={{ duration: 0.5 }}
         >
-          {repos.map((repo) => (
-            <motion.div 
-              key={repo.id} 
-              className={`p-4 border-4 border-black shadow-lg hover:shadow-xl ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-            >
-              <h3 className="text-xl font-bold">{repo.name}</h3>
-              <p className="text-sm mt-2">{repo.description || "No description available."}</p>
-              <a 
-                href={repo.html_url} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="block mt-3 text-red-500 hover:underline"
-              >
-                View on GitHub
-              </a>
-            </motion.div>
-          ))}
+            <FeaturedApps />
         </motion.div>
-      </section> */}
+        )}
+      </AnimatePresence>      
 
       {/* Footer */}
       <footer className="mt-16 py-4 border-t-4 border-black text-center">
