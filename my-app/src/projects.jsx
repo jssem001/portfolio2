@@ -31,34 +31,15 @@ const Projects = () => {
         </nav>
       </header>
 
-      {/* Hero Section
-      <section className="mt-16 flex flex-col items-center text-center">
-        <motion.h2
-          className="text-5xl font-bold"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          Hello, I'm <span className="text-red-500">Josh</span>
-        </motion.h2>
-        <p className="mt-4 text-lg">A passionate developer bringing ideas to life.</p>
-        <motion.button
-          className="mt-6 px-6 py-3 bg-black text-white border-4 border-black text-lg font-bold shadow-lg hover:bg-red-500 hover:text-black"
-          whileHover={{ scale: 1.1 }}
-        >
-          View My Work
-        </motion.button>
-      </section> */}
-
        {/* Categories Section */}
       <section className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <motion.div className={`p-6 ${darkMode ? "bg-blue-900" : "bg-blue-500"} text-white text-center font-bold text-2xl`} whileHover={{ scale: 1.05 }}>
+        <motion.div className={`p-6 ${darkMode ? "bg-blue-900" : "bg-blue-500"} text-white text-center font-bold text-2xl border-black border-4 rounded-md`} whileHover={{ scale: 1.05 }}>
           Data
         </motion.div>
-        <motion.div className={`p-6 ${darkMode ? "bg-green-900" : "bg-green-500"} text-white text-center font-bold text-2xl`} whileHover={{ scale: 1.05 }}>
+        <motion.div className={`p-6 ${darkMode ? "bg-green-900" : "bg-green-500"} text-white text-center font-bold text-2xl border-black border-4 rounded-md`} whileHover={{ scale: 1.05 }}>
           Applications
         </motion.div>
-        <motion.div className={`p-6 ${darkMode ? "bg-orange-900" : "bg-orange-500"} text-white text-center font-bold text-2xl`} whileHover={{ scale: 1.05 }}>
+        <motion.div className={`p-6 ${darkMode ? "bg-orange-900" : "bg-orange-500"} text-white text-center font-bold text-2xl border-black border-4 rounded-md`} whileHover={{ scale: 1.05 }}>
           Exercises
         </motion.div>
       </section>
