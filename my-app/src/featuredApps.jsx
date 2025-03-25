@@ -40,8 +40,7 @@ const featuredApps = [
   },
 ];
 
-const FeaturedApps = () => {
-  const [darkMode, setDarkMode] = useState(false);
+const FeaturedApps = ({ darkMode }) => {
 
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">

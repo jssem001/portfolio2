@@ -210,7 +210,7 @@ const Projects = () => {
             exit={{ opacity: 0, y: -20 }} 
             transition={{ duration: 0.5 }}
         >
-            <FeaturedApps />
+            <FeaturedApps darkMode={darkMode}/>
         </motion.div>
         )}
       </AnimatePresence>      
