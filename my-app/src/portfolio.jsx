@@ -18,14 +18,14 @@ const Portfolio = () => {
     // <div className={`min-h-screen ${darkMode ? "bg-black text-white" : "bg-[#F5F5F5] text-black"} p-8`}>
     <div className={`h-screen flex flex-col justify-between ${darkMode ? "bg-black text-white" : "bg-[#F5F5F5] text-black"} p-8`}>
       {/* Header Section */}
-      <header className={`flex justify-between items-center py-4 border-b-4 ${darkMode ? "border-red-500" : "border-black"}`}>
-        <h1 className="text-3xl font-bold">My Portfolio</h1>
-        <nav className="flex items-center gap-4">
+      <header className={`flex justify-end items-center py-4 border-b-4 ${darkMode ? "border-red-500" : "border-black"}`}>
+        {/* <h1 className="text-3xl font-bold">My Portfolio</h1> */}
+        <nav className="flex items-center gap-4 justify-end">
           <ul className="flex gap-6">
             <Link to="/aboutme"><li className="hover:underline cursor-pointer">About Me</li></Link>
             <a href="https://github.com/jssem001" target="_blank"><li className="hover:underline cursor-pointer">Github</li></a>
           </ul>
-          <button onClick={() => setDarkMode(!darkMode)} className="p-2 border-2 border-black rounded-full">
+          <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full">
             {darkMode ? <Sun size={24} className="text-yellow-400" /> : <Moon size={24} className="text-black" />}
           </button>
         </nav>
