@@ -1,18 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 
 const About = () => {
-//   const [repos, setRepos] = useState([]);
-  const [darkMode, setDarkMode] = useState(false);
-
-//   useEffect(() => {
-//     fetch("https://api.github.com/users/jssem001/repos")
-//       .then((response) => response.json())
-//       .then((data) => setRepos(data))
-//       .catch((error) => console.error("Error fetching repos:", error));
-//   }, []);
+  const [darkMode, setDarkMode] = useState(() => {
+      return localStorage.getItem("darkMode") === "true";
+    });
+  
+    useEffect(() => {
+      localStorage.setItem("darkMode", darkMode);
+    }, [darkMode]);
 
   return (
     <div className={`min-h-screen ${darkMode ? "bg-black text-white" : "bg-[#F5F5F5] text-black"} p-8`}> 

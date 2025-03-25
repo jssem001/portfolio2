@@ -5,7 +5,7 @@ import KDshot from "./docs/KD_shot.jpg";
 import IPL from "./docs/IPL.png";
 import footy from "./docs/footy.jpg";
 
-const featuredApps = [
+const featuredData = [
   {
     id: 1,
     title: "Hot Hand Exploration",
@@ -40,11 +40,11 @@ const featuredApps = [
   },
 ];
 
-const FeaturedApps = ({ darkMode }) => {
+const FeaturedData = ({ darkMode }) => {
 
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-      {featuredApps.map((app) => (
+      {featuredData.map((app) => (
          <motion.div
           key={app.id}
           className={`flex items-center p-4 border-4 border-black rounded-md shadow-lg hover:shadow-xl ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}
@@ -74,4 +74,4 @@ const FeaturedApps = ({ darkMode }) => {
   );
 };
 
-export default FeaturedApps;
+export default FeaturedData;
