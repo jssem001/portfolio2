@@ -34,6 +34,17 @@ const Projects = () => {
         </nav>
       </header>
 
+      {/* Desription Section */}
+      <motion.h2
+        className="text-2xl font-semibold mt-4 items-center"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        Explore a selection of articles that give data-driven insights through code, visualizations, and high-level analysis.
+        Alternatively, you can view some featured applications that cover a variety of needs and make use of frontend and backend tools.
+      </motion.h2>
+
       {/* Categories Section */}
       <section className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
         <motion.div 

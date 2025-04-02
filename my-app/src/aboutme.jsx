@@ -33,17 +33,17 @@ const About = () => {
       <section className={`mt-16 p-6 border-4 border-black shadow-lg ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
         <h2 className="text-4xl font-bold border-b-4 border-black inline-block">About Me</h2>
         <div className="mt-6 text-lg">
-          <h3 className="text-2xl font-bold">Where Have I Been?</h3>
+          {/* <h3 className="text-2xl font-bold">Where Have I Been?</h3>
           <ul className="list-disc pl-6">
             <li>Born in Kampala, Uganda.</li>
             <li>Currently based in Nairobi, Kenya.</li>
             <li>Traveled to parts of Africa, Europe, and the USA.</li>
-          </ul>
+          </ul> */}
           <h3 className="text-2xl font-bold mt-4">What Have I Done?</h3>
           <ul className="list-disc pl-6">
-            <li>Currently training to be a Software Engineer at Moringa School.</li>
-            <li>Holds a bachelor's degree in Computer Science.</li>
-            <li>Background in Data Analytics.</li>
+            <li>Hold a bachelor's degree in Computer Science.</li>
+            <li>Trained in Data Science and Full Stack Development.</li>
+            <li>Current tech stack: </li>
           </ul>
           <h3 className="text-2xl font-bold mt-4">What Are My Interests?</h3>
           <ul className="list-disc pl-6">
