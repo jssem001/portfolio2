@@ -32,27 +32,25 @@ const About = () => {
 
       {/* About Section */}
       <section className={`mt-16 p-6 border-4 border-black shadow-lg ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
-        <h2 className="text-4xl font-bold border-b-4 border-black inline-block">About Me</h2>
+        <h2 className="text-4xl font-bold inline-block">About Me</h2>
         <div className="mt-6 text-lg">
-          {/* <h3 className="text-2xl font-bold">Where Have I Been?</h3>
-          <ul className="list-disc pl-6">
-            <li>Born in Kampala, Uganda.</li>
-            <li>Currently based in Nairobi, Kenya.</li>
-            <li>Traveled to parts of Africa, Europe, and the USA.</li>
-          </ul> */}
-          {/* <h3 className="text-2xl font-bold mt-4">What Have I Done?</h3> */}
-          <ul className="list-disc pl-6">
+          <dl className="list-disc pl-6">
             {/* <li>Location: Uganda and Kenya  </li> */}
-            <li>Training: BSc Computer Science(2022). Data Analytics certificate(2022). Full Stack Development certificate(2024).</li>
-            <li>Trained in Data Science and Full Stack Development.</li>
-            <li>Current tech stack: </li>
-          </ul>
-          <h3 className="text-2xl font-bold mt-4">What Are My Interests?</h3>
-          <ul className="list-disc pl-6">
-            <li>Enjoys outdoor activities.</li>
-            <li>Passionate about sports and helping others.</li>
-            <li>Currently developing an app for African athletes and sports fans.</li>
-          </ul>
+            <dt><span className="font-bold">Training</span> BSc Computer Science (2022), Data Analytics certificate (2022), Full Stack Development certificate (2024)</dt>
+            <dt><span className="font-bold">My Tech Stack</span></dt>
+            <dd>Languages: Python, JavaScript, SQL </dd>
+            <dd>Frameworks: React, Node.js, Tailwind CSS, Vue.js, Flask</dd>
+            <dd>Databases: MySQL, PostgreSQL</dd>
+            <dd>Tools: VS Code, Github, Jupyter Labs</dd>
+            {/* <dd>APIs: Google Maps API, OpenWeather API, OpenAI API.</dd> */}
+            <dt><span className="font-bold">Interests</span> Sports, Education, Healthcare</dt>
+          </dl>
+          <h4 className="text-2xl font-bold mt-4">What I Do</h4>
+          <dl className="list-disc pl-6">
+            <dt>Create.</dt>
+            <dt>Analyse.</dt>
+            <dt>Educate.</dt>
+          </dl>
         </div>
       </section>
 
