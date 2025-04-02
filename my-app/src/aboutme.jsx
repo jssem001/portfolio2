@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Sun, Moon } from "lucide-react";
 
+
 const About = () => {
   const [darkMode, setDarkMode] = useState(() => {
       return localStorage.getItem("darkMode") === "true";
@@ -39,9 +40,10 @@ const About = () => {
             <li>Currently based in Nairobi, Kenya.</li>
             <li>Traveled to parts of Africa, Europe, and the USA.</li>
           </ul> */}
-          <h3 className="text-2xl font-bold mt-4">What Have I Done?</h3>
+          {/* <h3 className="text-2xl font-bold mt-4">What Have I Done?</h3> */}
           <ul className="list-disc pl-6">
-            <li>Hold a bachelor's degree in Computer Science.</li>
+            {/* <li>Location: Uganda and Kenya  </li> */}
+            <li>Training: BSc Computer Science(2022). Data Analytics certificate(2022). Full Stack Development certificate(2024).</li>
             <li>Trained in Data Science and Full Stack Development.</li>
             <li>Current tech stack: </li>
           </ul>
