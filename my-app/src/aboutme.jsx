@@ -45,12 +45,12 @@ const About = () => {
             {/* <dd>APIs: Google Maps API, OpenWeather API, OpenAI API.</dd> */}
             <dt><span className="font-bold">Interests</span> Sports, Education, Healthcare</dt>
           </dl>
-          <h4 className="text-2xl font-bold mt-4">What I Do</h4>
+          {/* <h4 className="text-2xl font-bold mt-4">What I Do</h4>
           <dl className="list-disc pl-6">
             <dt>Create.</dt>
             <dt>Analyse.</dt>
             <dt>Educate.</dt>
-          </dl>
+          </dl> */}
         </div>
       </section>
 
