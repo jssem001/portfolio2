@@ -4,7 +4,7 @@ import HotHand from "./docs/Hot_Hand_Fallacy.webp";
 import KDshot from "./docs/KD_shot.jpg";
 import IPL from "./docs/IPL.png";
 import footy from "./docs/footy.jpg";
-import fires from "./docs/fires.jpg";
+
 
 const featuredData = [
   {
@@ -39,14 +39,7 @@ const featuredData = [
     image: footy,
     github: "https://github.com/jssem001/Pythagorean-expectation",
   },
-  {
-    id: 5,
-    title: "Global Fire Tracking",
-    description:
-      "An application that tracks fires around the world.",
-    image: fires,
-    github: "https://huggingface.co/spaces/sesery/fire_spot_tracker",
-  },
+  
 ];
 
 const FeaturedData = ({ darkMode }) => {

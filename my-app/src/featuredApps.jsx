@@ -5,6 +5,7 @@ import School from "./docs/school.jpg";
 import OasisFM from "./docs/Oasis-fm-logo-1.png";
 import tactics from "./docs/tactics.jpg";
 import books from "./docs/books.jpg";
+import fires from "./docs/fires.jpg";
 
 const featuredApps = [
   {
@@ -46,6 +47,14 @@ const featuredApps = [
       "A command-line application for borrowing books.",
     image: books,
     github: "https://github.com/jssem001/library-cli",
+  },
+  {
+    id: 6,
+    title: "Global Fire Tracking",
+    description:
+      "An application that tracks fires around the world.",
+    image: fires,
+    github: "https://huggingface.co/spaces/sesery/fire_spot_tracker",
   },
 ];
 
