@@ -83,7 +83,7 @@ const FeaturedApps = ({ darkMode }) => {
                 rel="noopener noreferrer"
                 className="block mt-3 text-red-500 hover:underline"
                 >
-                View on GitHub
+                View More
                 </a>
             </div>
          </motion.div>
