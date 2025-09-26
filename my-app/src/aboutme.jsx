@@ -20,7 +20,7 @@ const About = () => {
         <nav className="flex items-center gap-4">
           <ul className="flex gap-6">
             <Link to="/"><li className="hover:underline cursor-pointer">Home</li></Link>
-            <a href="https://drive.google.com/file/d/1U9TrxsmViYgsrpjfRW8Y8OpmAam7EYlT/view?usp=sharing" target="_blank"><li className="hover:underline cursor-pointer">Resume</li></a>
+            <a href="https://drive.google.com/file/d/1mAQbV1PQrV73VxxJpWJQzNu-8O-IOpNB/view?usp=sharing" target="_blank"><li className="hover:underline cursor-pointer">Resume</li></a>
             <a href="https://www.linkedin.com/in/joshua-ssemwanga2001/" target="_blank"><li className="hover:underline cursor-pointer">LinkedIn</li></a>
           </ul>
           <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full">
